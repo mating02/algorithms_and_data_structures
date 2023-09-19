@@ -1,0 +1,42 @@
+dat-sose23,  05.07.2023, 12:45:38, 39955efa8e593a96f974dd167f4697ecae251aa6
+Korrektur Blatt 10
+
+Aufgabe 3.2
+	Test output of equals() on positions of a 20x20 board: 2/2
+	Test output of hashCode() on positions of a 20x20 board: 0/8
+	  java.lang.AssertionError: Method 'hashCode()' produces conflicts between positions of a 20x20 board.
+The hashCodes of positions (1,0) and (0,19) are both the same (19)
+Total points for Aufgabe 3.2: 2/10
+
+Aufgabe 3.3
+	Test output of equals(): 4/4
+	Test whether equals() was implemented based on hashCode(), which it shouldn't: 1/1
+	Test consistency of hashCode() with a correct equals() method: 5/5
+	Test distribution of hashCode() values (on asmall data set): 0/5
+	  java.lang.AssertionError: Method 'hashCode()' does not spread enough the hash code values.
+We colletced the hash codes of 240 different boards.
+Your method returned 6 different hash codes which amounts to
+40 collitions on average for the tested 3x2 boards with 4 robots.
+In order to obtain the points for this task, this ratio needs to be below 4.
+	Test distribution of hashCode() values (and timeout may indicate insufficient running time): 0/5
+	  java.lang.AssertionError: Method 'hashCode()' does not spread enough the hash code values.
+We colletced the hash codes of 3960 different boards.
+Your method returned 12 different hash codes which amounts to
+3.3e+02 collitions on average for the tested 4x3 boards with 4 robots.
+In order to obtain the points for this task, this ratio needs to be below 4.
+Total points for Aufgabe 3.3: 10/20
+
+Aufgabe 3.4
+	Test output of testBfsWithHashing() for tiny boards: 0/5
+	   java.lang.NullPointerException in RicochetRobotsKorrektur.checkSolver(RicochetRobotsKorrektur.java:79)
+	Test output of testBfsWithHashing() for boards of type XS: 0/10
+	   java.lang.NullPointerException in RicochetRobotsKorrektur.checkSolver(RicochetRobotsKorrektur.java:79)
+	Test output of testBfsWithHashing() for boards of type S: 0/15
+	   java.lang.NullPointerException in RicochetRobotsKorrektur.checkSolver(RicochetRobotsKorrektur.java:79)
+	Test output of testBfsWithHashing() for boards of type M: 0/20
+	   java.lang.NullPointerException in RicochetRobotsKorrektur.checkSolver(RicochetRobotsKorrektur.java:79)
+	Test output of testBfsWithHashing() for boards of type L: 0/20
+	   java.lang.NullPointerException in RicochetRobotsKorrektur.checkSolver(RicochetRobotsKorrektur.java:79)
+Total points for Aufgabe 3.4: 0/70
+
+Total points: 12/100
